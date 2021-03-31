@@ -18,7 +18,7 @@ void* thread_code(void *input) {
         pthread_create(&tid, NULL, thread_code, &spawn_thread);
         pthread_join(tid, NULL);
     } else {
-        printf("Looping forever so you can inspect my process stats...");
+        printf("Looping forever so you can inspect my process stats...\n");
         while (1);
     }
 
